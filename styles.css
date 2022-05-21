@@ -1,6 +1,7 @@
+
 body {
-    background-image: url("wallpaper_orange.png");
     background-color: #073642;
+    background-image: url("assets/images/wallpaper_orange.png");
     margin: 0px;
 }
 
@@ -17,11 +18,10 @@ body {
     background-color: #002b36;
     border-radius: 15px;
     margin: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: "Iosevka Term Extended";
-    font-size: 4rem;
     box-shadow: 0px 8px 24px #000000;
 }
 
@@ -29,56 +29,59 @@ body {
     user-select: none;
     background-color: #002b36;
     border-radius: 15px;
+    padding: 5px;
     margin: 15px;
-    font-family: "Iosevka Term Extended";
-    font-size: 3rem;
     box-shadow: 0px 8px 24px #000000;
 }
 
 .property0 {
     outline: none;
     user-select: none;
-    color: #839496;
-    text-decoration: none;
     background-color: #073642;
     border-width: 5px;
     border-style: solid;
     border-color: #002b36;
     box-shadow: 0px 5px 10px #000000;
     border-radius: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .property1 {
+    width: 400px;
+    height: 35px;
     outline: none;
     user-select: none;
     color: #859900;
     background-color: #002b36;
-    margin-left: 35px;
-    margin-bottom: 25px;
-    font-size: 18pt;
-    width: 400px;
-    height: 50px;
+    font-family: 'Iosevka Term Web';
+    font-size: 20pt;
     border: none;
+    position: relative; bottom: 15px;
+    padding-left: 15px;
 }
 
 .property2 {
     outline: none;
     user-select: none;
-    color: #839496;
-    font-size: 3rem;
-    text-decoration: none;
     background-color: #073642;
     border-width: 5px;
     border-style: solid;
     border-color: #002b36;
     box-shadow: 0px 5px 10px #000000;
     border-radius: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 15px;
+}
+
+.object0 img {
+    height: 80px;
+    width: 80px;
+    padding: 5px
+}
+
+.object1 img {
+    height: 50px;
+    width: 50px;
+    padding: 5px
 }
 
 .property1::placeholder {
@@ -89,25 +92,23 @@ body {
 @keyframes emphasis {
     0% {
         position: relative; right: 0px; bottom: 0px;
-        color: #839496;
     }
+
     50% {
+        position: relative; right: 4px; bottom: 4px;
         box-shadow: 0px 8px 24px #839496;
         border-color: #839496;
-        color: #6c71c4;
     }
+
     100% {
-        position: relative; right: 4px; bottom: 4px;
         box-shadow: 4px 4px #2aa198;
         border-color: #2aa198;
-        color: #d33682;
     }
 }
 
 .property0:hover {
     animation-name: emphasis;
     animation-duration: .5s;
-    color: #d33682;
     position: relative; right: 4px; bottom: 4px;
     border-color: #2aa198;
     box-shadow: 4px 4px #2aa198;
@@ -117,7 +118,6 @@ body {
 .property2:hover {
     animation-name: emphasis;
     animation-duration: .5s;
-    color: #d33682;
     position: relative; right: 4px; bottom: 4px;
     border-color: #2aa198;
     box-shadow: 4px 4px #2aa198;

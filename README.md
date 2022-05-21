@@ -1,8 +1,31 @@
 # Bloatpage
 
-A bloated startpage for the modern linux femboy.
+> A bloated startpage for the modern linux femboy. Terribly written, as all open source projects should be.
 
-## Screenshots
+## Contents
+
+- [Dependencies](#dependencies)
+    - [Browser](#browser)
+    - [Fonts](#fonts)
+- [Links](#links)
+- [Gallery](#gallery)
+- [Notes](#notes)
+
+## Dependencies
+
+### Browser
+
+Anything will do. Why wouldn't it ?
+
+### Fonts
+
+`Iosevka Term Extended` you can change them to anything you want anyways.
+
+## Links
+
+Whatever you want them to be!
+
+## Gallery
 
 ![bloatpage](https://raw.githubusercontent.com/iwasElitist/bloatpage/main/screenshots/2022-05-17-072338_1920x1080_scrot.png?raw=true "normal")
 
