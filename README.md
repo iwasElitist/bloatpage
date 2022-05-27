@@ -35,11 +35,11 @@ Whatever you want them to be - given you are willing to change the icons in the 
 | --- |
 | On opening the page |
 
-| bloatpage](https://raw.githubusercontent.com/iwasElitist/bloatpage/main/screenshots/2022-05-17-072504_1920x1080_scrot.png?raw=true "icon hover") |
+| ![bloatpage](https://raw.githubusercontent.com/iwasElitist/bloatpage/main/screenshots/2022-05-17-072504_1920x1080_scrot.png?raw=true "icon hover") |
 | --- |
 | On icon hover |
 
-| bloatpage](https://raw.githubusercontent.com/iwasElitist/bloatpage/main/screenshots/2022-05-17-072800_1920x1080_scrot.png?raw=true "search bar") |
+| ![bloatpage](https://raw.githubusercontent.com/iwasElitist/bloatpage/main/screenshots/2022-05-17-072800_1920x1080_scrot.png?raw=true "search bar") |
 | --- |
 | On text input and search hover |
 
