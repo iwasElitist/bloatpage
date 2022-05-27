@@ -17,11 +17,13 @@ This is my attempt at a proper startpage that I made myself it's still a work in
 
 ## Dependencies
 
-### 1. Browser
+### Browser
 
 Browser support is currently limited to `IE8+` because the homepage uses inline SVGs which I don't think support anything under `IE8`.
 
-### 2. Fonts
+----------------
+
+### Fonts
 
 `Iosevka Term Web` but you can change them to anything you want anyways by just replacing the font in the css and changing the stylesheet from `iosevka-term.css` to whatever font you want to use provided its in the right direcctory.
 
