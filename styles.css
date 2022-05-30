@@ -1,125 +1,156 @@
+:root {
+    --base03: #002b36;
+    --base02: #073642;
+    --base0: #839496;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red: #dc322f;
+    --magenta: #d33682;
+    --violet: #6c71c4;
+    --blue: #268bd2;
+    --cyan: #2aa198;
+}
+
+@font-face {
+    font-family: 'Iosevka Term Web';
+    font-display: swap;
+    font-weight: 400;
+    font-stretch: expanded;
+    font-style: normal;
+    src: url('assets/fonts/iosevka-term-extended.woff2') format('woff2');
+}
 
 body {
-    background-color: #073642;
+    background-color: var(--base02);
     background-image: url("assets/images/wallpaper_orange.png");
     margin: 0px;
 }
 
-.plane {
+.canvas {
+    width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
-.object0 {
-    background-color: #002b36;
+.search {
+    user-select: none;
+    white-space: nowrap;
+    background-color: var(--base03);
     border-radius: 15px;
-    margin: 15px;
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-shadow: 0px 8px 24px #000000;
-}
-
-.object1 {
-    user-select: none;
-    background-color: #002b36;
-    border-radius: 15px;
-    padding: 5px;
     margin: 15px;
-    box-shadow: 0px 8px 24px #000000;
+    box-shadow: 0px 10px 25px black;
 }
 
-.property0 {
-    outline: none;
-    user-select: none;
-    background-color: #073642;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #002b36;
-    box-shadow: 0px 5px 10px #000000;
-    border-radius: 15px;
-    margin: 10px;
-}
-
-.property1 {
+.inputbar {
     width: 400px;
     height: 35px;
     outline: none;
     user-select: none;
     color: #859900;
-    background-color: #002b36;
-    font-family: 'Iosevka Term Web';
+    background-color: var(--base03);
+    font-family: "Iosevka Term Web";
     font-size: 20pt;
     border: none;
     position: relative; bottom: 15px;
-    padding-left: 15px;
+    margin-left: 10px;
 }
 
-.property2 {
+.inputbar::placeholder {
+    color: var(--base0);
+}
+
+.enter {
     outline: none;
     user-select: none;
-    background-color: #073642;
+    background-color: var(--base02);
     border-width: 5px;
+    border-radius: 15px;
     border-style: solid;
-    border-color: #002b36;
-    box-shadow: 0px 5px 10px #000000;
+    border-color: var(--base03);
+    box-shadow: 0px 5px 15px black;
+    margin: 10px;
+}
+
+.shortcuts {
+    background-color: var(--base03);
     border-radius: 15px;
     margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 10px 25px black;
 }
 
-.object0 img {
-    height: 80px;
-    width: 80px;
-    padding: 5px
-}
-
-.object1 img {
-    height: 50px;
-    width: 50px;
-    padding: 5px
-}
-
-.property1::placeholder {
-    color: #839496;
-    opacity: 0.8;
+.websites {
+    outline: none;
+    user-select: none;
+    background-color: var(--base02);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--base03);
+    box-shadow: 0px 5px 15px black;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 5px;
 }
 
 @keyframes emphasis {
     0% {
         position: relative; right: 0px; bottom: 0px;
     }
-
     50% {
-        position: relative; right: 4px; bottom: 4px;
-        box-shadow: 0px 8px 24px #839496;
-        border-color: #839496;
+        box-shadow: 0px 10px 25px var(--base0);
+        border-color: var(--base0);
     }
-
     100% {
-        box-shadow: 4px 4px #2aa198;
-        border-color: #2aa198;
+        position: relative; right: 5px; bottom: 5px;
+        box-shadow: 5px 5px var(--cyan);
+        border-color: var(--cyan);
     }
 }
 
-.property0:hover {
+@keyframes icon-color {
+    0% {
+        fill: var(--yellow);
+    }
+    15% {
+        fill: var(--orange);
+    }
+    30% {
+        fill: var(--red);
+    }
+    45% {
+        fill: var(--magenta);
+    }
+    100% {
+        fill: var(--cyan);
+    }
+}
+
+.websites:hover {
     animation-name: emphasis;
     animation-duration: .5s;
-    position: relative; right: 4px; bottom: 4px;
-    border-color: #2aa198;
-    box-shadow: 4px 4px #2aa198;
+    position: relative; right: 5px; bottom: 5px;
+    border-color: var(--cyan);
+    box-shadow: 5px 5px var(--cyan);
     border-radius: 15px;
 }
 
-.property2:hover {
+.enter:hover {
     animation-name: emphasis;
     animation-duration: .5s;
-    position: relative; right: 4px; bottom: 4px;
-    border-color: #2aa198;
-    box-shadow: 4px 4px #2aa198;
+    position: relative; right: 5px; bottom: 5px;
+    border-color: var(--cyan);
+    box-shadow: 5px 5px var(--cyan);
     border-radius: 15px;
+}
+
+.icons:hover {
+    animation-name: icon-color;
+    animation-duration: 1s;
+    fill: var(--cyan);
 }
