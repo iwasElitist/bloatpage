@@ -6,10 +6,15 @@ This is my attempt at a proper startpage that I made myself it's still a work in
 
 ## Contents
 
+- [Showcase](#showcase)
 - [Browser](#browser)
 - [Fonts](#fonts)
 - [Links](#links)
 - [Notes](#notes)
+
+## Showcase
+![engine](https://github.com/iwasElitist/bloatpage/blob/main/assets/images/bloatpage.gif)
+<p align=center><em>refer to notes for information</em></p>
 
 ### Browser
 
@@ -42,5 +47,6 @@ Whatever you want them to be - given you are willing to change the inline svgs a
 ## Notes
 
 - On hovering your mouse close to or on the border of the buttons you might notice "_css jitter_" which I haven't been able to find a way to get rid of.
-- Because of the current implementation of the buttons which use inline SVGs instead of using the html `<img>`tag there may be a loss of some performance compared to pngs, but hey you don't get the same customizability
-- You can change the wallpaper by changing or modifiying the image file in `assets/images/` to be able to change the name of the file you have to change the name of the sourced file in the `index.html` file
+- Because of the current implementation of the buttons which use inline SVGs instead of using the html `<img>`tag there may be a loss of some performance compared to pngs, but hey you don't get the same customizability.
+- You can change the wallpaper by changing or modifiying the image file in `assets/images/` to be able to change the name of the file you have to change the name of the sourced file in the `index.html` file.
+- The patterns in the gif aren't actually there, the shadows are black as well.
