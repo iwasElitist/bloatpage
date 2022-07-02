@@ -4,8 +4,6 @@
 
 This is my attempt at a proper startpage that I made myself it's still a work in progess (cause tastes change anyways) and it seems like a pretty good side project to work on.
 
- https://raw.githubusercontent.com/iwasElitist/bloatpage/main/assets/videos/bloatpage.mp4
-
 ## Contents
 
 - [Browser](#browser)
