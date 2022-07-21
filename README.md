@@ -13,7 +13,7 @@ This is my attempt at a proper startpage that I made myself it's still a work in
 - [Notes](#notes)
 
 ## Showcase
-![engine](https://github.com/iwasElitist/bloatpage/blob/main/assets/images/bloatpage.gif)
+![engine](https://github.com/iwasElitist/bloatpage/blob/bloatpage/assets/images/bloatpage.gif)
 <p align=center><em>refer to notes for information</em></p>
 
 ### Browser
