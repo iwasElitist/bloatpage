@@ -1,8 +1,8 @@
-# Bloatpage
+# Bloatpage-Onedark
 
 > _A bloated startpage for the modern linux femboy - terribly written, as all open source projects should be. /s_
 
-This is my attempt at a proper startpage that I made myself it's still a work in progess (cause tastes change anyways) and it seems like a pretty good side project to work on.
+This is my attempt at a proper startpage that I made myself, with the onedark colorscheme this time, it's still a work in progess (cause tastes change anyways) and it seems like a pretty good side project to work on.
 
 ## Contents
 
@@ -13,7 +13,7 @@ This is my attempt at a proper startpage that I made myself it's still a work in
 - [Notes](#notes)
 
 ## Showcase
-![engine](https://github.com/iwasElitist/bloatpage/blob/main/assets/images/bloatpage.gif)
+![engine](https://github.com/iwasElitist/bloatpage/blob/bloatpage-onedark/assets/images/bloatpage-onedark.gif)
 <p align=center><em>refer to notes for information</em></p>
 
 ### Browser

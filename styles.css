@@ -7,43 +7,41 @@
 }
 
 body {
-    background-color: #073642;
-    background-image: url("assets/images/wallpaper_orange.png");
+    background-color: #1a212e;
+    background-image: url("assets/images/chainsawland.png");
     margin: 0px;
 }
 
-@keyframes pop-out {
-    from {
-        position: relative;
-        right: 0px;
-        bottom: 0px;
-        box-shadow: 0px 10px 25px #2aa198;
-        border-color: #2aa198;
+@keyframes jiggle {
+    0% {
+        transform: translateY(-6px); 
     }
-    to {
-        position: relative;
-        right: 5px;
-        bottom: 5px;
-        box-shadow: 5px 5px #2aa198;
-        border-color: #2aa198;
+    20% {
+        transform: translateY(6px); 
+    }
+    40% {
+        transform: translateY(-4px); 
+    }
+    60% {
+        transform: translateY(4px); 
+    }
+    80% {
+        transform: translateY(-2px); 
+    }
+    100% {
+        transform: translateY(2px); 
     }
 }
 
-@keyframes icon-color {
+@keyframes breathe {
     0% {
-        fill: #b58900;
+        fill: #93a4c3;
     }
-    15% {
-        fill: #cb4b16;
-    }
-    30% {
-        fill: #dc322f;
-    }
-    45% {
-        fill: #d33682;
+    50% {
+        fill: #8bcd5b;
     }
     100% {
-        fill: #2aa198;
+        fill: #93a4c3;
     }
 }
 
@@ -61,63 +59,57 @@ body {
     white-space: nowrap;
     outline: none;
     border-width: 5px;
-    border-radius: 15px;
+    border-radius: 65px;
     border-style: solid;
-    border-color: #002b36;
-    background-color: #002b36;
+    border-color: #21283b;
+    background-color: #21283b;
     padding: 10px;
     margin: 15px;
-    box-shadow: 0px 10px 15px black;
+    box-shadow: 0px 5px 15px #141b24;
 }
 
 .inputbar {
     user-select: none;
     white-space: nowrap;
     outline: none;
-    width: 400px;
+    width: 450px;
     height: 35px;
-    color: #859900;
-    background-color: #002b36;
+    color: #8bcd5b;
+    background-color: #21283b;
     font-family: "Iosevka Term Web";
-    font-size: 22pt;
+    font-size: 20pt;
     border: none;
     position: relative;
-    bottom: 15px;
-    margin-left: 10px;
+    bottom: 16px;
+    margin-left: 15px;
 }
 
 .inputbar::placeholder {
-    color: #839496;
+    color: #93a4c3;
 }
 
 .enter {
     user-select: none;
     white-space: nowrap;
     outline: none;
-    border-width: 5px;
-    border-radius: 15px;
+    border-width: 10px;
+    border-radius: 65px;
     border-style: solid;
-    border-color: #002b36;
-    background-color: #073642;
+    border-color: #21283b;
+    background-color: #21283b;
     margin: 10px;
-    box-shadow: 0px 5px 10px black;
+    box-shadow: 0px 5px 15px #141b24;
 }
 
-.enter:hover {
-    animation-name: pop-out;
-    animation-duration: 0.5s;
-    position: relative;
-    right: 5px;
-    bottom: 5px;
-    border-color: #2aa198;
-    box-shadow: 5px 5px #2aa198;
-    border-radius: 15px;
+.enter:focus {
+    animation-name: jiggle;
+    animation-duration: .5s;
 }
 
 .enter:hover .icons {
-    animation-name: icon-color;
+    animation-name: breathe;
     animation-duration: 1s;
-    fill: #2aa198;
+    animation-iteration-count: infinite;
 }
 
 .shortcuts {
@@ -125,43 +117,37 @@ body {
     white-space: nowrap;
     outline: none;
     border-width: 5px;
-    border-radius: 15px;
+    border-radius: 65px;
     border-style: solid;
-    border-color: #002b36;
-    background-color: #002b36;
+    border-color: #21283b;
+    background-color: #21283b;
     margin: 15px;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 10px 15px black;
+    box-shadow: 0px 5px 15px #141b24;
 }
 
 .websites {
     user-select: none;
     white-space: nowrap;
     outline: none;
-    border-width: 5px;
-    border-radius: 15px;
+    border-width: 15px;
+    border-radius: 65px;
     border-style: solid;
-    border-color: #002b36;
-    background-color: #073642;
+    border-color: #21283b;
+    background-color: #21283b;
     margin: 10px;
-    box-shadow: 0px 5px 10px black;
+    box-shadow: 0px 5px 15px #141b24;
 }
 
-.websites:hover {
-    animation-name: pop-out;
-    animation-duration: 0.5s;
-    position: relative;
-    right: 5px;
-    bottom: 5px;
-    border-color: #2aa198;
-    box-shadow: 5px 5px #2aa198;
-    border-radius: 15px;
+.websites:focus {
+    animation-name: jiggle;
+    animation-duration: .5s;
 }
 
 .websites:hover .icons {
-    animation-name: icon-color;
+    animation-name: breathe;
     animation-duration: 1s;
-    fill: #2aa198;
+    animation-iteration-count: infinite;
 }
