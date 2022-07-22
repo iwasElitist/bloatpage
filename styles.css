@@ -151,3 +151,8 @@ body {
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
+.namdrop {
+    color: #8bcd5b;
+    font-size: 18pt;
+}
